@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>FM Users</name>
+	<creationDate>July 18, 2012</creationDate>
+	<author>Levi Carter</author>
+	<authorEmail>levi@mangotreemedia.com</authorEmail>
+	<authorUrl>http://www.mangotreemedia.com</authorUrl>
+	<administration></administration>
+</extension>

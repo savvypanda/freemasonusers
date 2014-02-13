@@ -1,0 +1,63 @@
+# Ignore everything:
+*
+
+# Do not ignore the meta files
+!.gitignore
+!LICENSE
+!README.md
+
+# Do not ignore the fmusers component
+!components/
+!components/*
+!components/com_fmusers/
+!components/com_fmusers/*
+!components/com_fmusers/controllers/
+!components/com_fmusers/controllers/*
+!components/com_fmusers/helpers/
+!components/com_fmusers/helpers/*
+!components/com_fmusers/helpers/html/
+!components/com_fmusers/helpers/html/*
+!components/com_fmusers/models/
+!components/com_fmusers/models/*
+!components/com_fmusers/models/forms/
+!components/com_fmusers/models/forms/*
+!components/com_fmusers/views/
+!components/com_fmusers/views/*
+!components/com_fmusers/views/login/
+!components/com_fmusers/views/login/*
+!components/com_fmusers/views/login/tmpl/
+!components/com_fmusers/views/login/tmpl/*
+!components/com_fmusers/views/profile/
+!components/com_fmusers/views/profile/*
+!components/com_fmusers/views/profile/tmpl/
+!components/com_fmusers/views/profile/tmpl/*
+!components/com_fmusers/views/registration/
+!components/com_fmusers/views/registration/*
+!components/com_fmusers/views/registration/tmpl/
+!components/com_fmusers/views/registration/tmpl/*
+!components/com_fmusers/views/remind/
+!components/com_fmusers/views/remind/*
+!components/com_fmusers/views/remind/tmpl/
+!components/com_fmusers/views/remind/tmpl/*
+!components/com_fmusers/views/reset/
+!components/com_fmusers/views/reset/*
+!components/com_fmusers/views/reset/tmpl/
+!components/com_fmusers/views/reset/tmpl/*
+
+# Do not ignore the freemason plugins
+!plugins/
+!plugins/*
+!plugins/user/
+!plugins/user/*
+!plugins/user/freemason/
+!plugins/user/freemason/*
+!plugins/authentication/
+!plugins/authentication/*
+!plugins/authentication/freemason/
+!plugins/authentication/freemason/*
+
+# Ignore miscellaneous index.html and index.php files
+components/index.html
+plugins/index.html
+plugins/user/index.html
+plugins/authentication/index.html

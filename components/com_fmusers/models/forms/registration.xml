@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_USERS_REGISTRATION_DEFAULT_LABEL">
+		
+		<field name="spacer1" type="spacer" class="text" label="COM_FMUSERS_REGISTER_INTRO" />
+		<field name="spacer2" type="spacer" class="text" label="COM_FMUSERS_REGISTER_PROBLEMS_TEXT"/>
+		<!--field name="spacer" type="spacer" class="text" label="COM_USERS_REGISTER_REQUIRED" /-->
+
+<!-- 			description="COM_FMUSERS_REGISTER_LASTNAME_DESCRIPTION" -->
+		<field name="lastname" type="text" filter="string" required="true" size="30"
+			label="COM_FMUSERS_REGISTER_LASTNAME_LABEL"
+			message="COM_FMUSERS_REGISTER_LASTNAME_MESSAGE"
+		/>
+
+<!--			description="COM_FMUSERS_REGISTER_LODGENO_DESCRIPTION" -->
+		<field name="lodgeno" type="text" filter="string" required="true" size="9"
+			label="COM_FMUSERS_REGISTER_LODGENO_LABEL"
+			message="COM_FMUSERS_REGISTER_LODGENO"
+		/>
+
+<!--			description="COM_FMUSERS_DESIRED_USERNAME" -->
+		<field name="username" type="text" class="text" required="true" size="30"
+			label="COM_USERS_REGISTER_USERNAME_LABEL"
+			message="COM_USERS_REGISTER_USERNAME_MESSAGE"
+		/>
+		
+		<field name="spacer3" type="spacer" class="text" label="COM_FMUSERS_REGISTER_USERNAME_EXPLANATION" />
+
+<!--			description="COM_USERS_REGISTER_EMAIL1_DESC" -->
+		<field name="email1" type="email" field="id" filter="string" required="true" size="30" unique="true" validate="email"
+			label="COM_USERS_REGISTER_EMAIL1_LABEL"
+			message="COM_USERS_REGISTER_EMAIL1_MESSAGE"
+		/>
+
+<!--			description="COM_USERS_REGISTER_EMAIL2_DESC" -->
+		<field name="email2" type="email" field="email1" filter="string" required="true" size="30" validate="equals"
+			label="COM_USERS_REGISTER_EMAIL2_LABEL"
+			message="COM_USERS_REGISTER_EMAIL2_MESSAGE"
+		/>
+
+		<field name="spacer5" type="spacer" class="text" label="COM_FMUSERS_REGISTER_EMAIL_EXPLANATION" />
+		
+		<field name="spacer6" type="spacer" class="text" label="COM_FMUSERS_NBSP" />
+		
+		<field name="spacer4" type="spacer" class="text" label="COM_FMUSERS_REGISTER_PASSWORD_EXPLANATION" />
+		
+<!--			description="COM_USERS_DESIRED_PASSWORD" -->
+		<field name="password1" type="password" autocomplete="off" class="validate-password" field="password2" filter="raw" required="true" size="30" validate="equals"
+			label="COM_USERS_REGISTER_PASSWORD1_LABEL"
+			message="COM_USERS_REGISTER_PASSWORD1_MESSAGE"
+		/>
+
+<!--			description="COM_USERS_REGISTER_PASSWORD2_DESC" -->
+		<field name="password2" type="password" autocomplete="off" class="validate-password" filter="raw" required="true" size="30"
+			label="COM_USERS_REGISTER_PASSWORD2_LABEL"
+			message="COM_USERS_REGISTER_PASSWORD2_MESSAGE"
+		/>
+
+		<field name="captcha" type="captcha" validate="captcha"
+			label="COM_USERS_CAPTCHA_LABEL"
+			description="COM_USERS_CAPTCHA_DESC"
+		/>
+	</fieldset>
+</form>
